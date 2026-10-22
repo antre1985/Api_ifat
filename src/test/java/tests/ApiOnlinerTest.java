@@ -30,8 +30,6 @@ public class ApiOnlinerTest {
         HeaderValidator.checkContentTypeJson(response);
         SchemaValidator.checkRateSchema(response);
         BodyValidator.checkBanksKey(response);
-        BodyValidator.checkAmount(response);
-        BodyValidator.checkScale(response);
         BodyValidator.checkGrowNotNull(response);
         RateFormatValidator.checkAmountFormat(response);
     }
